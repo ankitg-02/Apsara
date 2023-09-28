@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apsara-login</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(127, 43, 146);
+        color: rgb(193, 183, 209);
+        text-align: center;
+        padding-top: 3%;
+    }
+    
+    .login{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(33, 11, 46);
+        height: 500px;
+        width: 400px;
+        align-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border: 5px solid aliceblue;
+        border-radius: 40px;
+    }
+    .login img{
+      height: 50px;
+      border-radius: 50%;
+    }
+    .login button img{
+      height: 25px;
+    }
+    
+    .login button{
+      font-size: 13px;
+      border-radius:20px;
+    }
+    button{
+        border: 2px solid rgba(17, 195, 244, 0.909);
+        cursor: pointer;
+        height: 40px;
+        width: 180px;
+        
+    }
+    button b{
+      text-align: center;
+    }
+    label{
+      height: 50px;
+      width: 180px;
+    }
+    footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+</style>
+<body>
+    <div class="login">
+      <div class="card-body">
+        <h4 class="card-title"><img src="./icon.jpg" alt="">
+          <h1>Apsara.com</h1>
+            <h2>Welcome back</h2>
+            <a href=""><button type="button"><b>Sign-up with Google <img src="./google-signup.png" alt=""></b></button></a>
+            <hr>
+        <p class="card-text">
+            <h3>Email-id</h3>
+            <div class="form-group">
+              <label for="email-id"></label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="enter your email-id">
+              <small id="emailHelpId" class="form-text text-muted"></small>
+            </div>
+            <h3>Password</h3>
+            <div class="form-group">
+              <label for="password"></label>
+              <input type="password" class="form-control" name="" id="" placeholder="enter the password">
+            </div>
+            <footer>
+              Aparsa&#169
+             
+            </footer>
+    
+        </p>
+      </div>
+    </div>
+    
+    
+</body>
+</html>

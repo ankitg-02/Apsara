@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<style>
+    body{
+        background-color: rgb(136, 52, 144);
+        color: antiquewhite;
+        text-align: center;
+    }
+    .flavours{
+        display: grid;
+        grid-column: 2;
+        grid-row: 3;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        align-items: center;
+    }
+    button{
+        cursor: pointer;
+        border: 2px solid rgb(211, 74, 199);
+        height:60px ;
+        width: 500px;
+        margin: 20px;
+        font-size: 30px;
+        background-color: rgb(33, 11, 46);
+        border-radius: 50px;
+        color:wheat;
+        text-decoration: solid;
+        
+    }
+     h2,h3{
+        color: #fcd0fa;
+     }
+     img{
+        cursor: pointer;
+     }
+     nav img{
+        height: 60px;
+        border-radius: 50%;
+     }
+</style>
+<body>
+    <nav><img src="./icon.jpg" alt=""></nav>
+    <h2><u>Our flavours</u></h2>
+     <div class="flavours">
+        <button type="button">chocolate</button>
+        <button type="button">butterscotch</button>
+        <button type="button">kesar-pista</button>
+        <button type="button">vanilla</button>
+        <button type="button">alphanso-mango</button>
+        <button type="button">black-current</button>
+        <button type="button">strawberry</button>
+        <button type="button">rabidi</button>
+    </div>
+    <footer>
+        <h3>Aparsa&#169</h3>
+        <img src="./icons8-facebook-48.png" alt="">
+        <img src="./icons8-instagram-48.png" alt="">
+        <img src="./icons8-twitter-48.png" alt="">
+    </footer>
+    
+</body>
+</html>

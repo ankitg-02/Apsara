@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <style>
+        body{
+            background-color: rgb(127, 43, 146);
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            color: rgb(177, 169, 175);
+    
+
+        }
+         .header{
+            height: 500px;
+            width: 400px;
+            background-color: rgb(33, 11, 46);
+            border: 2px solid rgba(166, 124, 159, 0.957) ;
+            border-radius: 20px;
+
+        }
+        .header img{
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        select{
+            display: flex;
+            height: 40px;
+            width: 140px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: blueviolet;
+            color: azure;
+            font-size: 15px;
+        }
+        select,.delivery,.pick-up{
+            cursor: pointer;
+        }
+        .input-group-mb-3 input {
+            display: flex;
+            height: 40px;
+            width: 300px;
+            box-sizing: content-box;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-color: rgb(248, 241, 253);
+            color: rgb(43, 137, 225);
+            border-radius: 20px;
+        }
+        .container .add_btn{
+            height: 30px;
+            width: 60px;
+            margin-left: 170px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container .button{
+            height: 30px;
+            width: 180px;
+            margin-left: 110px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: aqua;
+        }
+        .your_order{
+            display: inline;
+            height: 30px;
+            width: 160px;
+            margin-left: 120px;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        ol{
+            display: flex;
+            justify-content: center;
+            margin-right: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./icon.jpg" alt="">
+         <h3>Welcome to</h3>
+        <h2>Aparsa Icecream</h2>
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Delivery Type</option>
+              <option class="delivery">Delivery</option>
+              <option class="pick-up">Pick-up</option>
+            </select>
+                <div class="container">
+                    <div class="input-group-mb-3">
+                        <span><input type="text" class="form-control" placeholder="Enter your order" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button class="add_btn">Add</button></span>
+                    </div>
+                      <button class="button">Place your order</button>
+                      <ol class="add_items">
+                        <div class="list-group">
+                            <button type="button" class="your_order">your's order</button>
+                        </ol>
+                   
+                </div>
+          </div>
+    <script>       
+         document.documentElement
+         let Delivery=document.getElementsByClassName("delivery")
+         let addbtn =document.getElementsByClassName("add_btn")
+         addbtn.addEventListener('click',your_orders)
+         function your_orders(e){
+            let currentbtn=e.currentTarget;
+            let currentInput=currentbtn.previousElementSibling;
+            console.log(currentInput.value)
+         }
+        
+    </script>
+</body>
+</html>

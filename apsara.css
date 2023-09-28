@@ -1,0 +1,142 @@
+nav  a button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 580px;
+    padding-top: 100px;
+}
+
+
+body{
+    color: blueviolet;
+    background-image: url(background.png);
+    position: relative;
+}
+.toggle{
+    display: flex;
+    flex-direction: flex-end;
+}
+h1,h2,h3{
+    text-align: center;
+    color: rgb(100, 8, 92);
+}
+b{
+    font-size: 50px;
+    color: rgb(48, 5, 87);
+}
+p{
+    text-align: center;
+}
+h1 img{
+    height: 50px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 50%;
+}
+p u{
+    font-size:20px;
+}
+.contact-us,.locate{
+display: flex;
+flex-direction: row;
+height:40px ;
+border-radius: 15%;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(90, 25, 79);
+}
+.card{
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    padding-left: 20px;
+    background-color: rgb(165, 31, 213);
+    color: aliceblue;
+
+}
+button{
+    display: inline;
+    justify-content: space-around;
+    background-color: rgb(59, 21, 51);
+    color: rgb(197, 44, 235);
+    border: rgb(224, 162, 234) 2px solid;
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.process img{
+
+    height: 250px;
+    width: 250px;
+}
+nav{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    -ms-flex-direction: row;
+}
+.product img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.product p{
+    text-transform: none;
+    font-size: 2px;
+    text-shadow: 2px aliceblue;
+    color: rgba(74, 16, 65, 0.89);
+}
+.product{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product img:hover{
+    transform: rotateZ(-45deg);
+    transform: rotateY(25deg);
+    transition: 5ms;
+}
+.product img::before{
+    transform: rotateZ(-45deg);
+    transform: rotateY(25deg);
+    transition: 5ms;
+}
+.product img::after{
+    transform: rotateZ(-45deg);
+    transform: rotateY(25deg);
+    transition: 5ms;
+}
+footer img{
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+@media(max-width:800px){
+
+}
+
